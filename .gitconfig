@@ -10,12 +10,10 @@
 # ---------------------------------
 [alias]
 	i = init
-	p = push
-	a = add .
-	c = commit -m
 
+a = ! git add . && git commit -m
 lm = ! git pull origin master && git push origin master
-ld = pull origin development && push origin development
+ld = ! git pull origin development && git push origin development
 
 [filter "lfs"]
 	required = true
