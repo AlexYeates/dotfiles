@@ -1,0 +1,24 @@
+# ---------------------------------
+# User Config
+# ---------------------------------
+[user]
+	name = AlexYeates
+	email = hi@alexyeates.com  
+
+# ---------------------------------
+# Alias
+# ---------------------------------
+[alias]
+	i = init
+	p = push
+	a = add .
+	c = commit -m
+
+lm = pull origin master && push origin master
+ld = pull origin development && push origin development
+
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
