@@ -14,7 +14,7 @@
 	a = add .
 	c = commit -m
 
-lm = pull origin master && git push origin master
+lm = ! pull origin master && git push origin master
 ld = pull origin development && push origin development
 
 [filter "lfs"]
