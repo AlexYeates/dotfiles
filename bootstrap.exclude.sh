@@ -39,6 +39,6 @@ install_tools () {
 	fi
 }
 
-# init
+init
 link
-# install_tools
+install_tools
