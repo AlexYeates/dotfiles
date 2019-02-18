@@ -2,10 +2,6 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH="$HOME/bin:$PATH"
 
-# Source this first since it contains the locations of directories needed by funcitons
-source .exports.zsh
-source .aliases.zsh
-
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/AY784892/.oh-my-zsh"
 
@@ -100,4 +96,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Source this first since it contains the locations of directories needed by funcitons
+source $HOME/.exports.zsh
+source $HOME/.aliases.zsh
 
