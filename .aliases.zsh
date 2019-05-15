@@ -26,9 +26,5 @@ alias nip='npm install --only=prod'
 # AEM 
 # ---------------------------------
 
-alias s-pull='git -c http.sslVerify=false pull'
-alias s-com='git -c http.sslVerify=false commit'
-alias s-fetch='git -c http.sslVerify=false fetch'
-alias s-push='git -c http.sslVerify=false push'
 alias s-build='mvn install && mvn crx:install && mvn crx:install -Dinstance.url=http://localhost:4503'
 
